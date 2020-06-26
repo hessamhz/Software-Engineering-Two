@@ -1,9 +1,10 @@
 from django.db import models
+from category import models as md
 
 # Create your models here.
 class productDetails(models.Model):
     product_name = models.CharField(max_length=200)
-    product_category = models.ForeignKey(productCategory, on_delete=models.CASCADE)
+    product_category = models.ForeignKey(md.Category, on_delete=models.CASCADE)
     product_brand = models.CharField(max_length=50)
     product_size = models.CharField(max_length=2)
     product_image = models.ImageField(upload_to='images/',blank=True)

@@ -118,6 +118,6 @@ backend/londonTV/media/
 
 # bro. we are not putting migrations in the repo. if a dir is missing just create it. we
 # also have datamigrations
-migrations/
+#migrations/
 
 *.swp

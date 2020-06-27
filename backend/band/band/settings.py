@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Our Apps
-    #'category',
+    'category',
     'main',
     'product'
 ]

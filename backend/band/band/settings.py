@@ -25,7 +25,7 @@ SECRET_KEY = 'itbq-03^*0ajb1fabirk9l-)_$rynfa^(39)#n^tx&1k)d^&0+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['51.195.36.182']
+ALLOWED_HOSTS = ['51.195.36.182', 'localhost']
 
 
 # Application definition
@@ -131,3 +131,4 @@ STATICFILES_FINDERS = (
 )
 
 MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

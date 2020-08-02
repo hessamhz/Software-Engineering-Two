@@ -1,0 +1,30 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block content %}
+	<br><br>
+	<div class="container">
+		<div class="row">
+	    {% for product in related_products %}
+	      <div class="col-md-4">
+	          <div class="card text-center">
+	            <a href="#"><img class="card-img-top" src="{{ product.image.url }}"></a>
+	              <div class="card-body">
+	                <h7 class="card-title">
+	                  <a href="#" class="text-dark text-decoration-none">{{ product.name }}</a>
+	                </h7>
+	              </div>
+	              <div class="card-footer">
+	                <div class="float-center">
+	                  <label href="#" class="text-dark">{{ product.price }}$</label>
+	                  <br>
+	                  <button class="btn btn-dark btn-block" type="submit">Add to the cart</button>
+	                </div>
+	              </div>
+	          </div>
+	          <br>
+	        </div>
+	    {% endfor %}
+		</div>
+	</div>
+{% endblock content %}

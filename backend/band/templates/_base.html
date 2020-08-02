@@ -12,32 +12,29 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="">Handy Crafts</a>
+      <a class="navbar-brand" href="{% url 'home' %}">Handy Crafts</a>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'product_cat' %}?category=Glasses">Glasses</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Glasses</a>
+            <a class="nav-link" href="{% url 'product_cat' %}?category=Watch">Watch</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Watch</a>
+            <a class="nav-link" href="{% url 'product_cat' %}?category=Necklaces">Necklaces</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Necklaces</a>
+            <a class="nav-link" href="{% url 'product_cat' %}?category=Bracelet">Bracelet</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Bracelet</a>
+            <a class="nav-link" href="{% url 'product_cat' %}?category=Wallet">Wallet</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Wallet</a>
+            <a class="nav-link" href="{% url 'product_cat' %}?category=Phonecase">Phone case</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Phone case</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Key holder</a>
+            <a class="nav-link" href="{% url 'product_cat' %}?category=keyholder">Key holder</a>
           </li>
         </ul>
       </div>

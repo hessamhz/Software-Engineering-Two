@@ -12,7 +12,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=8, decimal_places=2)
     description = models.TextField()
     profile = models.ForeignKey(PriceProfile, on_delete=models.CASCADE, null=True, blank=True)
-
+    created_date = models.DateTimeField()
     def __str__(self):
         return f"{self.name} / {self.category}"
 

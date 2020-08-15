@@ -1,6 +1,5 @@
 from django.db import models
 from category.models import Category
-from main.models import PriceProfile
 
 # Image Location Function should be Written here:
 
@@ -11,7 +10,7 @@ class Product(models.Model):
     image = models.ImageField(upload_to='images/')
     price = models.DecimalField(max_digits=8, decimal_places=2)
     description = models.TextField()
-    profile = models.ForeignKey(PriceProfile, on_delete=models.CASCADE, null=True, blank=True)
+    # profile = models.ForeignKey(PriceProfile, on_delete=models.CASCADE, null=True, blank=True)
     created_date = models.DateTimeField(blank=True, null=True)
     def __str__(self):
         return f"{self.name} / {self.category}"

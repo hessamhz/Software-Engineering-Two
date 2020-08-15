@@ -38,4 +38,9 @@ class ProductDetailView(View):
     template_name = 'model.html'
 
     def get(self, request, *args, **kwargs):
-        return render(request, self.template_name, {'product': Product.objects.get(pk=self.kwargs.get('pk'))})
+        key = self.kwargs.get('pk')
+        try:
+            pr = Product.objects.get(pk=key)
+            return render(request, self.template_name, {'product': pr})
+        except Product.DoesNotExist:
+            return HttpResponse("Product Does Not Exist")

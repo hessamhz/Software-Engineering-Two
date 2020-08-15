@@ -1,5 +1,5 @@
 from django.db import models
-
+from product.models import Product
 
 class PriceProfile(models.Model):
     title = models.CharField(max_length=128)
@@ -20,7 +20,12 @@ class Order(models.Model):
     is_finished = models.BooleanField(default=False)
 
     def __str__(self):
-        return self.title
+        return self.status
 
     class Meta:
-        verbose_name_plural = "Price Profiles"
+        verbose_name_plural = "Orders"
+
+
+class OrderProduct(models.Model):
+    order = models.ForeignKey(Order, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)

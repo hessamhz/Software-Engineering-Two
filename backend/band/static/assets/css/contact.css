@@ -1,0 +1,489 @@
+.contact {
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+  }
+  .contact.screen-height {
+    width: 100%;
+    height: 100vh;
+  }
+  .contact .contact-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .contact-data {
+    width: 100%;
+    display: flex;
+  }
+  .contact-col-data, .contact-col-address{
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    z-index: 9;
+  }
+  .contact-col-data{
+    width: 66.66666667%;
+  }
+  .contact-content-data {
+    list-style-type: none;
+    /* counter-reset: compteListe; */
+    /* font: 200 normal 52px "Poppins"; */
+  
+    position: absolute;
+    left:30%;
+    right:30%;
+    top: calc(50vh - 10px);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .contact-content-data li:first-child {
+    font-family: "Poppins";
+    /* font-size: 20px; */
+    color: #fff;
+    opacity:1;
+  }
+  .contact-content-data li:not(:first-child) {
+    font-family: "Poppins";
+    color: #fff;
+    opacity:0.5;
+    font-size: 22px;
+    /* padding: 5px 0 0 0; */
+  }
+  .contact-col-address{
+    width: 33.33333333%;
+  }
+  .contact-content-address {
+    list-style-type: none;
+  
+    position: absolute;
+    left:0;
+    right:0;
+    top: calc(50vh - 10px);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .contact-content-address li:first-child {
+    font-family: "Poppins";
+    font-size: 22px;
+    color: #fff;
+    opacity:1;
+  }
+  .contact-content-address li:not(:first-child) {
+    font-family: "Poppins";
+    color: #fff;
+    opacity:0.5;
+    /* font-size: 45px; */
+    /* padding: 5px 0 0 0; */
+  }
+  .contact-social-media-data-icon{
+    font-size: 20px !important;
+    padding:0px 10px 0 0;
+  }
+  .contact-language{
+    font-size: 14px !important;
+    padding:15px 15px 0 0;
+  }
+  .img-map{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: 50% 50%;
+    image-rendering: optimizeQuality;
+    will-change: left, right;
+    transform: scale(1,1);
+    opacity: 0.03;
+  }
+  /* contactFormCarousel######################################################################################################################## */
+  .contact-form-btn {
+    font-family: "Poppins";
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    bottom: 25px;
+    right: 55px;
+    z-index: 9;
+    cursor: pointer;
+    font-weight: 100 !important;
+  }
+
+  .contact-form-overly {
+    width: 100%;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.05);
+    z-index: 0;
+    position: absolute;
+    bottom: -100%;
+    left:0;
+    z-index: 98;
+    overflow: hidden !important;
+  }
+  /* contactFormCarousel--------------------------------------------------------------------------------------- */
+    /* ----------------- */
+    .contact-form-carousel-main .contact-form-carousel-cell {
+      width: 100%;
+      height: 100vh;
+      margin-right: 10px;
+      background: transparent;
+      /* border-radius: 5px; */
+      /* counter-increment: carousel-cell; */
+
+    }.contact-form-carousel-wrraper {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+    }
+
+
+
+
+  .contact-form-carousel-button-row {
+    text-align: center;
+    /* width: 100%; */
+  }
+  .contact-form-carousel-button-group {
+    display: inline-block;
+    /* vertical-align: bottom; */
+    position: absolute;
+    top: 50%;
+    left: 67px;
+    transform: translate(0, -50%);
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 10px;
+  }
+  .contact-form-carousel-button {
+    display: block;
+    /* padding: 20px 22px; */
+  
+    /* border: 1px solid #ddd;
+    border-radius: 100%;
+    background-color: #fafafa;
+    width: 25px;
+    height: 25px; */
+    margin: 10px 0 10px 0;
+  
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    opacity: 1;
+    width: 6px;
+    height: 6px;
+    /* margin: 0 10px; */
+    opacity: 0.9;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.5, -0.75, 0.7, 2);
+    transition-delay: 0s;
+  
+    /* background-image: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1)); */
+  }
+  .contact-form-carousel-button.contact-form-carousel-is-selected {
+    border: 1px solid #fff;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }
+  
+  .contact-form-carousel-button-content {
+    margin-left: 50px;
+    margin-top: -35px;
+    color: #000;
+  }
+  .contact-form-carousel-button-arrow {
+    display: inline-block;
+    /* position: absolute; */
+    /* padding: 20px 22px; */
+    /* font-size: 18px; */
+    /* background-image: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.1)); */
+  }
+  .contact-form-carousel-left-icon {
+    display: inline-block;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    width: 20px;
+    height: 20px;
+    transform: rotate(-225deg) !important;
+    margin: 0 0 0 -20px;
+    opacity: 0.2;
+    /* position: absolute;
+    margin: 0 10px; */
+  }
+  
+  .contact-form-carousel-right-icon {
+    display: inline-block;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg) !important;
+    margin: 0 0 0 50px;
+    /* position: absolute;
+    margin: 0 10px; */
+  }
+  .contact-form-carousel-finish-icon {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    /* display: inline-block; */
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.07);
+    margin: -15px 0 0 43px;
+    border-radius: 50%;
+    opacity: 0;
+    
+  }
+  /* ---- button-group ---- */
+  .contact-form-carousel-overly-footer {
+    width: 100%;
+    height:70px;
+    /* background-color: rgba(0,0,0,0.1); */
+    background-color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    /* float: left; */
+  }
+  .contact-form-carousel-side-total {
+    font: 200 normal 30px "Poppins";
+    color: #fff;
+    position: absolute;
+    left:55px;
+    top: 13px;
+  }
+  .contact-form-carousel-side-arrow {
+    position: absolute;
+    right:55px;
+    top: 50%;
+    transform: translate(0,-50%);
+  }
+
+
+
+
+
+  /* form----------------------------------------------------------------------------- */
+  .contact-form-carousel-cunt-cart {
+    font-family: "Poppins";
+    font-size: 20px;
+    position: absolute;
+    right: 40px;
+    bottom: 35px;
+    color: #fff;
+  }
+  .contact-form-carousel-status {
+    font-family: "Poppins";
+    font-size: 20px;
+    position: absolute;
+    left: 22.5px;
+    top: -5px;
+    color: #fff;
+  }
+  .contact-form-carousel-progress-bar {
+    height: 2px;
+    width: 0;
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    left: 0px;
+    bottom: 117px;
+    z-index: 0;
+  }
+  /* input----------------- */
+
+  .contact-form-wrapper-input {
+    width:62%;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+  }
+  
+  .contact-form-input-container {
+    position: relative;
+    margin: 55px 0px;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    /* border: 0px solid #fff; */
+    border: none;
+    -webkit-text-fill-color: rgb(255, 255, 255,1);
+    /* -webkit-box-shadow: 0 0 0px 1000px #000 inset; */
+    transition: background-color 5000s ease-in-out 0s;
+    margin: 0;
+    padding:0;
+  }
+  .contact-form-input-container input {
+    outline: none;
+    z-index: 1;
+    position: relative;
+    background: none;
+    width: 100%;
+    height: 50px;
+    border: 0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+    padding:0;
+  }
+  
+
+ .contact-form-input-container textarea {
+    outline: none;
+    z-index: 1;
+    position: relative;
+    background: none;
+    width: 55%;
+    height: 50px;
+    border: 0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 0 0 0;
+    padding:0;
+  }
+  .contact-form-input-container input:focus ~ label, .contact-form-input-container textarea:focus ~ label {
+    color: rgba(255, 255, 255, 0.3);
+    /* text-transform: uppercase; */
+    font-weight: 600;
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    margin:0 0 0 2px;
+    font-size: 14px;
+    opacity: 0;
+  }
+  
+  .contact-form-input-container input:valid ~ label, .contact-form-input-container textarea:valid ~ label {
+    color: rgba(255, 255, 255, 0.3);
+    /* text-transform: uppercase; */
+    font-weight: 600;
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    margin:0 0 0 2px;
+    font-size: 14px;
+    opacity: 0;
+  }
+  
+  .contact-form-input-container input:focus ~ .contact-form-bar:before,
+  .contact-form-input-container input:focus ~ .contact-form-bar:after,
+  .contact-form-input-container textarea:focus ~ .contact-form-bar:before,
+  .contact-form-input-container textarea:focus ~ .contact-form-bar:after {
+    width: 100%;
+  }
+ 
+  .contact-form-input-container label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(255, 255, 255,0.08);
+    font-size: 40px;
+    font-weight: 800 !important;
+    line-height: 60px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    margin:0 0 0 -3px;
+  }
+  
+  .contact-form-input-container .contact-form-bar {
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    background: rgba(255, 255, 255, 0.08);
+    width: 100%;
+    height: 2px;
+  }
+  
+
+  .contact-form-endLine {
+    position: absolute;
+    left: 130px;
+    bottom: 55px;
+    background: rgba(255, 255, 255, 0.08);
+    width: 100%;
+    height: 2px;
+  }
+  .contact-form-input-container .contact-form-bar:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 2px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .contact-form-input-container .contact-form-bar:before {
+    left: 0%;
+  }
+  
+  /* .contact-form-input-container .contact-form-bar:after {
+    right: 50%;
+  } */
+  
+  .contact-form-input-container-label{
+    position: absolute;
+    color: rgb(255, 255, 255,1);
+    font-size: 14px;
+    margin: 0 0 0 -1px;
+    top:-8px;
+  }
+  .contact-form-input-container-required{
+    position: absolute;
+
+    color: rgb(255, 255, 255,0.5);
+    font-size: 8px;
+    margin: 0;
+    top:55px;
+  }
+  .contact-form-input-container-number{
+    position: absolute;
+
+    color: rgb(0, 0, 0,0.3);
+    font-size: 30px;
+    margin: 0 0 0 -50px;
+    top:10px;
+  }
+  .contact-form-input-container-unlimited{
+    position: absolute;
+
+    color: rgb(255, 255, 255,0.5);
+    font-size: 8px;
+    margin: 0;
+    top:55px;
+  }
+  .contact-form-input-container-together{
+    display: flex;
+    width:100%;
+    position: relative;
+    margin: -55px 0px;
+    /* justify-content: flex-start; */
+  }
+  .contact-form-input-container-together-one{
+    width:50% !important;
+  }
+  .contact-form-input-container-together-two{
+    width:50% !important;
+  }

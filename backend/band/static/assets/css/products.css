@@ -1,0 +1,514 @@
+/* productIcon######################################################################################################################## */
+.product {
+    /* margin: 0px 20px; */
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    cursor: pointer;
+    -webkit-flex: none;
+    flex: none;
+    overflow: hidden !important;
+    margin: 0 0 0 20px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: none;
+    /* width: 40px;
+    height: 40px; */
+    /* border: 1px solid #fed208;
+    border-radius: 50%; */
+  }
+  .product-pluse {
+    /* margin: 0px 20px; */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .product-one {
+    /* display: inline-block; */
+    border: 2px solid #fff;
+    width: 15px;
+    height: 15px;
+    /* transform: rotate(-225deg) !important; */
+    position: absolute;
+    /* bottom: 19px; */
+    bottom: 13px;
+    right: 0px;
+  }
+  .product-two {
+    /* display: inline-block; */
+    border: 2px solid #fff;
+    width: 15px;
+    /* height: 34px; */
+    height: 15px;
+    /* transform: rotate(-45deg) !important; */
+    position: absolute;
+    bottom: 0px;
+    right: 19px;
+    /* margin: 0 20px; */
+  }
+  .product-three {
+    /* display: inline-block; */
+    border: 2px solid #fff;
+    width: 15px;
+    height: 15px;
+    /* transform: rotate(-225deg) !important; */
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+  .product-four {
+    /* display: inline-block; */
+    border: 2px solid #fff;
+    width: 15px;
+    height: 15px;
+    /* transform: rotate(-225deg) !important; */
+    position: absolute;
+    bottom: 13px;
+    right: 19px;
+  }
+
+/* productCarousel######################################################################################################################## */
+.product-overly {
+  width: 100%;
+  height: 100vh;
+  background-color: #101010;
+  z-index: 0;
+  position: absolute;
+  /* bottom: -100%; */
+  z-index: 1;
+  overflow: hidden !important;
+}
+/* product-carousel--------------------------------------------------------------------------------------- */
+.has-slider {
+  position: absolute;
+  /* margin-top: 10%; */
+  overflow: hidden !important;
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+  /* height: 100%; */
+}
+.container-slider {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 999999 !important;
+}
+.carousel-main .carousel-cell-main {
+  width: 100%;
+  height: 100vh;
+  margin-right: 10px;
+  background: transparent;
+  /* border-radius: 5px; */
+  /* counter-increment: carousel-cell; */
+}
+/* cell number */
+/* .carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+} */
+.carousel-nav-icon {
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffff;
+  text-align: center;
+}
+.carousel-nav {
+  /* position: absolute;
+  top: 0%;
+  left: 50%; */
+  background: transparent;
+  z-index: 0;
+  margin-top: -115px;
+}
+.carousel-nav .carousel-cell-nav {
+  height: 50px;
+  width: 50px;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+  margin: 0 20px 0 0;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.carousel-nav .carousel-cell-nav:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+.carousel-nav .carousel-cell-nav.is-nav-selected {
+  background: rgba(255, 255, 255, 0.2);
+}
+.carousel-cell-nav:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* parallax */
+.parallax {
+  position: relative;
+  height: 100vh;
+  overflow: hidden !important;
+}
+
+/* carousel */
+.carousel {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden !important;
+}
+.carousel .flickity-viewport {
+  height: 100% !important;
+}
+
+.carousel-cell {
+  /* outline: 2px solid green; */
+  height: 100%;
+  /* width: 100%; */
+  width: 75%;
+  margin: 0px 0;
+  background: transparent;
+  /* border-radius: 5px; */
+  z-index: 1;
+}
+
+.carousel-contain {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-image {
+  display: block;
+  /* -webkit-clip-path: inset(2% 2% 2% 2%);
+          clip-path: inset(2% 2% 2% 2%); */
+  width: 70vw;
+  height: 70vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* transition-property: all;
+  transition-duration: 0.5s; */
+}
+/* .carousel-image:hover {
+  opacity: 0.5;
+  z-index: 1;
+} */
+/* .carousel-text{
+  color:#fff;
+  font-size: 20px;
+  position: absolute;
+  top: 100%;
+  left:50%;
+            transform: translate(-50%, -100%);
+} */
+.flickity-button {
+  display: none;
+  background: transparent;
+}
+.flickity-button:hover {
+  background: transparent;
+}
+.flickity-prev-next-button {
+  width: 40px;
+  height: 40px;
+  top: 3%;
+  right: 2%;
+  z-index: 1;
+  -webkit-transform: none;
+  transform: none;
+}
+
+.flickity-prev-next-button.previous {
+  left: auto;
+  right: 140px;
+}
+
+.flickity-prev-next-button.next {
+  right: 100px;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: #ccc;
+}
+
+.flickity-prev-next-button {
+  opacity: 0.5;
+  transition: opacity 200ms ease;
+}
+.carousel-mask {
+  border: 10px solid orange;
+}
+
+/* flickity-option */
+.flickity-page-dots {
+  display: none;
+  bottom: 40px;
+  left: 40px;
+  width: auto;
+}
+.flickity-page-dots .dot {
+  background-color: transparent;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  opacity: 1;
+  width: 6px;
+  height: 6px;
+  margin: 0 10px;
+  opacity: 0.25;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.5, -0.75, 0.7, 2);
+  transition-delay: 0s;
+  z-index: 9 !important;
+}
+.flickity-page-dots .dot.is-selected {
+  border: 1px solid #fff;
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+
+.carousel-cunt {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  position: absolute;
+  right: 40px;
+  bottom: 35px;
+  color: #fff;
+}
+.carousel-status {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  position: absolute;
+  left: 40px;
+  top: 35px;
+  color: #fff;
+}
+.progress-bar {
+  height: 20px;
+  width: 0;
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  left: 0px;
+  top: 35px;
+  z-index: 0;
+}
+/* .carousel-overlay {
+  width: 70vw;
+  height: 70vh;
+
+     position: absolute;
+     top: 50%;
+     left:50%;
+               transform: translate(-50%, -50%);
+  background: #000;
+  opacity: 0.5;
+} */
+.carousel-content {
+  color: #fff;
+  /* width: 70vw;
+  height: 70vh;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.carousel-content-model {
+  color: #fff;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 90px;
+}
+.carousel-content-details {
+  color: rgb(255, 255, 255,0.5);
+  font-size: 12px;
+  margin:-35px 5px;
+}
+.carousel-content-price {
+  color: #fff;
+  font-size: 16px;
+  margin:-35px 6px;
+  text-align: right;
+}
+.carousel-category-content {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  position: absolute;
+  left: 40px;
+  top: 35px;
+  color: #fff;
+}
+.carousel-category-content-back {
+  font-family: "Poppins", sans-serif;
+  color: #090909;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  z-index: -1;
+  font-size: 450px;
+  transform: translateX(-50%) translateY(-50%);
+  font-weight: bold;
+  opacity: 0.5;
+}
+/* product-icon-------------------------------------- */
+/* watch ---------*/
+.watch-icon-one {
+  width: 15px;
+  height: 15px;
+  border: solid 2px #fff;
+}
+.watch-icon-two {
+  width: 2px;
+  height: 7px;
+  background-color: #fff;
+  position: absolute;
+  left: 3px;
+}
+.watch-icon-three {
+  width: 2px;
+  height: 7px;
+  background-color: #fff;
+  position: absolute;
+  right: 3px;
+}
+.watch-icon-four {
+  width: 2px;
+  height: 7px;
+  background-color: #fff;
+  position: absolute;
+  left: 3px;
+  top: -7px;
+}
+.watch-icon-five {
+  width: 2px;
+  height: 7px;
+  background-color: #fff;
+  position: absolute;
+  right: 3px;
+  top: -7px;
+}
+.watch-icon-six {
+  width: 5px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  right: 5px;
+  top: -5px;
+}
+.watch-icon-eight {
+  width: 5px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  right: 5px;
+  top: 18px;
+}
+/* glasses ---------*/
+.glasses-icon-one {
+  width: 15px;
+  height: 15px;
+  border: solid 2px #fff;
+  position: absolute;
+  margin-left: 18px;
+}
+.glasses-icon-two {
+  width: 15px;
+  height: 15px;
+  border: solid 2px #fff;
+  margin-right: 18px;
+}
+.glasses-icon-three {
+  width: 5px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: -3px;
+  top: 6px;
+}
+.glasses-icon-four {
+  width: 5px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  right: -3px;
+  top: 6px;
+}
+
+.glasses-icon-five {
+  width: 5px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 13px;
+  top: 3px;
+}
+.glasses-icon-six {
+  width: 5px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  right: 13px;
+  top: 9px;
+}
+/* cover ---------*/
+.cover-icon-one {
+  width: 15px;
+  height: 22px;
+  border: solid 2px #fff;
+}
+.cover-icon-two {
+  width: 5px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 5px;
+  top: 15px;
+}
+/* wallet ---------*/
+.wallet-icon-one {
+  width: 22px;
+  height: 15px;
+  border: solid 2px #fff;
+}
+.wallet-icon-two {
+  width: 5px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  right: 1px;
+  top: 7px;
+}
+/* cigarette ---------*/
+.cigarette-icon-one {
+  width: 15px;
+  height: 22px;
+  border: solid 2px #fff;
+}
+.cigarette-icon-two {
+  width: 5px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+}

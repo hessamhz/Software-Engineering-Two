@@ -1,0 +1,955 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>.Band</title>
+    <script src="{% static 'js/pace.min.js' %}"></script>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"
+  />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity-fade@1/flickity-fade.css"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div
+        class="cities slideshow screen-height"
+        data-js="city-slider"
+        data-transition=""
+      >
+        <div class="slideshow-inner">
+          <div class="cities__slider slides">
+            <div class="cities__slide slide is-active">
+              <div class="slide__slide-content">
+                <span>01</span>
+                <h2>
+                  <a href="{% url 'product_cat' %}?category=Glasses">Glasses</a>
+                </h2>
+                <div class="image-containerr">
+                  <img
+                    src="{% static 'img/2.jpg' %}"
+                    alt="bracelets-bijoux-createur"
+                    class="imagee"
+                    style="width:400px;height:250px;position:absolute;top:0;left:0;"
+                  />
+                </div>
+              </div>
+              <div class="image-container">
+                <img
+                  src="{% static 'img/2.jpg' %}"
+                  alt="bracelets-bijoux-createur"
+                  class="image queue-loading as-background"
+                />
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <filter id="blur">
+                    <feGaussianBlur stdDeviation="3" />
+                  </filter>
+                </svg>
+              </div>
+            </div>
+
+            <div class="cities__slide slide">
+              <div class="slide__slide-content">
+                <span>02</span>
+                <h2>
+                  <a href="{% url 'product_cat' %}?category=Watch">Watch</a>
+                </h2>
+              </div>
+              <div class="image-container">
+                <img
+                  src="{% static 'img/11.jpg' %}"
+                  alt="bracelets-bijoux-createur"
+                  class="image queue-loading as-background"
+                />
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <filter id="blur">
+                    <feGaussianBlur stdDeviation="3" />
+                  </filter>
+                </svg>
+              </div>
+            </div>
+
+            <div class="cities__slide slide">
+              <div class="slide__slide-content">
+                <span>03</span>
+                <h2>
+                  <a href="{% url 'product_cat' %}?category=Necklaces">Necklaces</a>
+                </h2>
+              </div>
+              <div class="image-container">
+                <img
+                  src="{% static 'img/14.jpg' %}"
+                  alt="bracelets-bijoux-createur"
+                  class="image queue-loading as-background"
+                />
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <filter id="blur">
+                    <feGaussianBlur stdDeviation="3" />
+                  </filter>
+                </svg>
+              </div>
+            </div>
+
+            <div class="cities__slide slide">
+              <div class="slide__slide-content">
+                <span>04</span>
+                <h2>
+                  <a href="{% url 'product_cat' %}?category=Bracelet">Bracelet</a>
+                </h2>
+              </div>
+              <div class="image-container">
+                <img
+                  src="{% static 'img/12.jpg' %}"
+                  alt="bracelets-bijoux-createur"
+                  class="image queue-loading as-background"
+                />
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <filter id="blur">
+                    <feGaussianBlur stdDeviation="3" />
+                  </filter>
+                </svg>
+              </div>
+            </div>
+
+            <div class="cities__slide slide">
+              <div class="slide__slide-content">
+                <span>05</span>
+                <h2>
+                  <a href="{% url 'product_cat' %}?category=Wallet">Wallet</a>
+                </h2>
+              </div>
+              <div class="image-container">
+                <img
+                  src="{% static 'img/16.jpg' %}"
+                  alt="bracelets-bijoux-createur"
+                  class="image queue-loading as-background"
+                />
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <filter id="blur">
+                    <feGaussianBlur stdDeviation="3" />
+                  </filter>
+                </svg>
+              </div>
+            </div>
+
+            <div class="cities__slide slide">
+              <div class="slide__slide-content">
+                <span>06</span>
+                <h2>
+                  <a href="{% url 'product_cat' %}?category=Phonecase">Phone case</a>
+                </h2>
+              </div>
+              <div class="image-container">
+                <img
+                  src="{% static 'img/17.jpg' %}"
+                  alt="bracelets-bijoux-createur"
+                  class="image queue-loading as-background"
+                />
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <filter id="blur">
+                    <feGaussianBlur stdDeviation="3" />
+                  </filter>
+                </svg>
+              </div>
+            </div>
+
+            <div class="cities__slide slide">
+              <div class="slide__slide-content">
+                <span>07</span>
+                <h2>
+                  <a href="{% url 'product_cat' %}?category=keyholder">key holder</a>
+                </h2>
+              </div>
+              <div class="image-container">
+                <img
+                  src="{% static 'img/18.jpg' %}"
+                  alt="bracelets-bijoux-createur"
+                  class="image queue-loading as-background"
+                />
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <filter id="blur">
+                    <feGaussianBlur stdDeviation="3" />
+                  </filter>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <nav class="pages">
+            <ul class="carousel-nav-main">
+              <li class="page is-active carousel-cell-nav-main">
+                <a href="{% url 'product_cat' %}?category=Glasses" class="page__link">
+                  <i data-js="page-loader"></i>
+                  Glasses
+                </a>
+              </li>
+              <li class="page carousel-cell-nav-main">
+                <a href="{% url 'product_cat' %}?category=Watch" class="page__link">
+                  <i data-js="page-loader"></i>
+                  Watch
+                </a>
+              </li>
+              <li class="page carousel-cell-nav-main">
+                <a href="{% url 'product_cat' %}?category=Necklaces" class="page__link">
+                  <i data-js="page-loader"></i>
+                  Necklaces
+                </a>
+              </li>
+              <li class="page carousel-cell-nav-main">
+                <a href="{% url 'product_cat' %}?category=Bracelet" class="page__link">
+                  <i data-js="page-loader"></i>
+                  Bracelet
+                </a>
+              </li>
+              <li class="page carousel-cell-nav-main">
+                <a href="{% url 'product_cat' %}?category=Wallet" class="page__link">
+                  <i data-js="page-loader"></i>
+                  wallet
+                </a>
+              </li>
+              <li class="page carousel-cell-nav-main">
+                <a href="{% url 'product_cat' %}?category=Phonecase" class="page__link">
+                  <i data-js="page-loader"></i>
+                  Phone case
+                </a>
+              </li>
+              <li class="page carousel-cell-nav-main">
+                <a href="{% url 'product_cat' %}?category=keyholder" class="page__link">
+                  <i data-js="page-loader"></i>
+                  key holder
+                </a>
+              </li>
+            </ul>
+            <!-- <div class="carousel-nav-main">
+              <div class="carousel-cell-nav-main">
+                <div class="carousel-nav-main-icon">
+                  a
+                </div>
+              </div>
+              <div class="carousel-cell-nav-main">
+                <div class="carousel-nav-icon">
+                  b
+                </div>
+              </div>
+              <div class="carousel-cell-nav-main">
+                <div class="carousel-nav-icon">
+                  c
+                </div>
+              </div>
+              <div class="carousel-cell-nav-main">
+                <div class="carousel-nav-icon">
+                  d
+                </div>
+              </div>
+              <div class="carousel-cell-nav-main">
+                <div class="carousel-nav-icon">
+                  e
+                </div>
+              </div>
+            </div> -->
+          </nav>
+
+          <div
+            class="pages-counter"
+            style="position:absolute;bottom:27px;left:45%;"
+          >
+            <ul>
+              <li class="page is-active">
+                <a href="#" class="page__link">
+                  <span class="line-time"><i class="re"></i></span>
+                </a>
+              </li>
+            </ul>
+            <div
+              style="position:absolute;bottom:0px;left:-10px;color:#fff;z-index:9999;"
+            >
+              <span>0</span>
+              <p style="color:#fff;display: inline-block" class="textt">1</p>
+            </div>
+            <div
+              style="position:absolute;bottom:0px;left:120px;color:#fff;z-index:9999;"
+            >
+              <span>0</span>
+              <p style="color:#fff;display: inline-block" class="texttt">7</p>
+            </div>
+          </div>
+
+          <div class="arrows">
+            <div class="arrow left prev chevron-arrow-left">
+              <!-- <span class=""></span> -->
+            </div>
+            <div class="arrow right next chevron-arrow-right">
+              <!-- <span class=""></span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="production-btn">
+        <div class="product cursor-link" style="z-index: 9999999 !important">
+          <div class="product-one"></div>
+          <div class="product-two"></div>
+          <div class="product-three"></div>
+          <div class="product-four"></div>
+        </div>
+
+        <div class="collection cursor-link" style="z-index: 9999999 !important">
+          <div class="collection-one"></div>
+          <div class="collection-two"></div>
+          <div class="collection-three"></div>
+          <!-- <div class="collection-four"></div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="logo-band cursor-link">
+      <div class="letter-b"></div>
+      <div class="letter-n"></div>
+      <div class="letter-d"></div>
+      <div class="point-b"></div>
+      <div class="point-n"></div>
+    </div>
+
+    <div class="navbar-btn cursor-link">
+      <div class="menu-btn">
+        <div class="menu-btn-one"></div>
+        <div class="menu-btn-two"></div>
+      </div>
+      <div class="cart-btn cursor-link">
+        <div class="cart-btn-one"></div>
+        <div class="cart-btn-two"></div>
+        <div class="cart-btn-badges">
+          <p class="cart-btn-badges-counter">0</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-overly">
+      <div class="menu-data">
+        <ul class="menu-content">
+          <li>Navigation</li>
+          <li><a href="#" class="aaa">Home</a></li>
+          <li><a href="#" class="aaa">Product</a></li>
+          <li><a href="#" class="aaa">Collection</a></li>
+          <li><a href="#" class="aaa">Blog</a></li>
+          <li><a href="#" class="aaa">About</a></li>
+          <li><a href="#" class="aaa">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="cart-overly">
+            <!-- partial:index.partial.html -->
+      <!-- <h1>Flickity - asNavFor</h1> -->
+      <div class="has-slider">
+          <div class="container-slider">
+            <!-- Flickity HTML init -->
+            <div class="carousel-main-cart">
+              <div class="carousel-cell-main-cart">
+                  <div class="parallax">
+                      <!-- background parallax layer -->
+                      <!-- carousel: midground parallax layer -->
+                      <div class="carousel-cart">
+                        <div class="carousel-cell-cart">
+                          <div class="carousel-contain-cart">
+                            <div class="carousel-contain-card-cart">
+                              <img
+                                src="{% static 'img/17.jpg' %}"
+                                alt="orange tree"
+                                class="carousel-image-cart"
+                              />
+                              <div class="carousel-overlay-cart"></div>
+                              <div class="carousel-content-cart">
+                                <div class="carousel-content-model-cart">Model Name</div>
+                                <div class="carousel-content-details-cart">
+                                  Lorem Ipsum is simply dummy text
+                                </div>
+                                <div class="plusminus horiz">
+                                  <button class="minus">
+                                    <div class="minus-one"></div>
+                                  </button>
+                                  <input
+                                    type="number"
+                                    name="productQty"
+                                    value="1"
+                                    min="0"
+                                    max="10"
+                                  />
+                                  <button class="plus">
+                                    <div class="plus-one"></div>
+                                    <div class="plus-two"></div>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-cell-cart">
+                          <div class="carousel-contain-cart">
+                            <img
+                              src="{% static 'img/10.jpg' %}"
+                              alt="orange tree"
+                              class="carousel-image-cart"
+                            />
+                            <div class="carousel-overlay-cart"></div>
+                            <div class="carousel-content-cart">
+                              <div class="carousel-content-model-cart">Model Name</div>
+                              <div class="carousel-content-details-cart">
+                                Lorem Ipsum is simply dummy text
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-cell-cart">
+                          <div class="carousel-contain-cart">
+                            <img
+                              src="{% static 'img/16.jpg' %}"
+                              alt="orange tree"
+                              class="carousel-image-cart"
+                            />
+                            <div class="carousel-overlay-cart"></div>
+                            <div class="carousel-content-cart">
+                              <div class="carousel-content-model-cart">Model Name</div>
+                              <div class="carousel-content-details-cart">
+                                Lorem Ipsum is simply dummy text
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <p class="carousel-category-content-back-cart">cart</p> -->
+                      <!-- <p class="carousel-category-content">Glasses</p> -->
+                      <!-- <p class="carousel-cunt-cart"></p>
+                      <p class="carousel-status-cart"></p> -->
+                      <!-- <div class="progress-bar-cart"></div> -->
+                    </div>
+              </div>
+
+              <div class="carousel-cell-main-cart">
+                <div class="wrapper-input">
+                  <form>
+                    <div class="input-container">
+                      <input type="text" id="name" required="required" class="chekkk"/>
+                      <label for="name">Name</label>
+                      <div class="bar"></div>
+                    </div>
+                    <div class="input-container">
+                      <input type="number" id="number" required="required" />
+                      <label for="number">Phone Number</label>
+                      <div class="bar"></div>
+                    </div>
+                    <div class="input-container">
+                      <input type="text" id="email" required="required" />
+                      <label for="email">Email</label>
+                      <div class="bar"></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="carousel-cell-main-cart">
+                <div class="wrapper-input">
+                  <form>
+                    <div class="input-container">
+                      <input type="text" id="text" required="required" />
+                      <label for="text">Address</label>
+                      <div class="bar"></div>
+                    </div>
+                    <div class="input-container">
+                      <input type="number" id="number" required="required" />
+                      <label for="number">Home Number</label>
+                      <div class="bar"></div>
+                    </div>
+                    <div class="input-container">
+                      <input type="number" id="number" required="required" />
+                      <label for="number">Postal Code</label>
+                      <div class="bar"></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- <div class="carousel-cell-main-cart">W</div>
+              <div class="carousel-cell-main-cart">C</div> -->
+            </div>
+            <div class="progress-bar-cart"></div>
+            <p class="carousel-status-cart">1</p>
+            <!-- <div class="flickity-page-dots dot"></div> -->
+            <!-- <p class="carousel-status">1</p> -->
+
+            <!-- <div class="carousel-nav-cart">
+              <div class="carousel-cell-nav-cart">
+                <div class="carousel-nav-nav-cart">1</div>
+              </div>
+              <div class="carousel-cell-nav-cart">
+                <div class="carousel-nav-nav-cart">2</div>
+              </div>
+              <div class="carousel-cell-nav-cart">
+                <div class="carousel-nav-nav-cart">3</div>
+              </div>
+              <div class="carousel-cell-nav-cart">
+                <div class="carousel-nav-nav-cart">4</div>
+              </div>
+              <div class="carousel-cell-nav-cart">
+                <div class="carousel-nav-nav-cart">5</div>
+              </div>
+            </div> -->
+            <div class="button-row-cart">
+              <div class="button-group-cart button-group-cells-cart">
+                <div class="button-cart is-selected"></div>1
+                <div class="button-cart"></div>2
+                <div class="button-cart"></div>3
+                <!-- <div class="button-cart"></div>4
+                <div class="button-cart"></div>5 -->
+              </div>
+              <div class="button-grouo-arrow-cart">
+                <div class="button-cart-arrow button-previous-cart">
+                  <div class="left-icon"></div>
+                </div>
+                <div class="button-cart-arrow button-next-cart">
+                  <div class="right-icon"></div>
+                </div>
+                <div class="button-cart-arrow button-next-cart finish-icon-active">
+                  <div class="finish-icon"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="product-overly">
+      <!-- partial:index.partial.html -->
+      <!-- <h1>Flickity - asNavFor</h1> -->
+      <div class="has-slider">
+        <div class="container-slider">
+          <!-- Flickity HTML init
+          <div class="carousel-main cursor-dragge">
+            <div class="carousel-cell-main">
+              <div class="parallax">
+                <div class="carousel">
+                  {% for product in related_products.Watch %}
+                    <div class="carousel-cell">
+                      <div class="carousel-contain">
+                        <img
+                          src="{{ product.image.url }}"
+                          alt="orange tree"
+                          class="carousel-image"
+                        />
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-content">
+                          <div class="carousel-content-model">{{product.name}}</div>
+                          <div class="carousel-content-details">
+                            {{product.description}}
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  {% endfor %}
+                <div class="carousel-main-cart">
+              <div class="carousel-cell-main-cart">
+                  <div class="parallax">
+                      <!-- background parallax layer -->
+                      <!-- carousel: midground parallax layer -->
+                      <div class="carousel-cart">
+                        <div class="carousel-cell-cart">
+                          <div class="carousel-contain-cart">
+                            <div class="carousel-contain-card-cart">
+                              <img
+                                src="{% static 'img/17.jpg' %}"
+                                alt="orange tree"
+                                class="carousel-image-cart"
+                              />
+                              <div class="carousel-overlay-cart"></div>
+                              <div class="carousel-content-cart">
+                                <div class="carousel-content-model-cart">Model Name</div>
+                                <div class="carousel-content-details-cart">
+                                  Lorem Ipsum is simply dummy text
+                                </div>
+                                <div class="plusminus horiz">
+                                  <button class="minus">
+                                    <div class="minus-one"></div>
+                                  </button>
+                                  <input
+                                    type="number"
+                                    name="productQty"
+                                    value="1"
+                                    min="0"
+                                    max="10"
+                                  />
+                                  <button class="plus">
+                                    <div class="plus-one"></div>
+                                    <div class="plus-two"></div>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                </div> -->
+                <p class="carousel-category-content-back">Watch</p>
+                <!-- <p class="carousel-category-content">Watch</p>
+                  <p class="carousel-cunt"></p>
+                  <p class="carousel-status"></p>
+                  <div class="progress-bar"></div> -->
+              </div>
+            </div>
+
+            <div class="carousel-cell-main">
+              <div class="parallax">
+                <!-- background parallax layer -->
+                <!-- carousel: midground parallax layer -->
+                <div class="carousel">
+                  {% for product in related_products.Glasses %}
+                    <div class="carousel-cell">
+                      <div class="carousel-contain">
+                        <img
+                          src="{{ product.image.url }}"
+                          alt="orange tree"
+                          class="carousel-image"
+                        />
+                        <div class="carousel-overlay"></div>
+                        <div class="carousel-content">
+                          <div class="carousel-content-model">{{product.name}}</div>
+                          <div class="carousel-content-details">
+                            {{product.description}}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  {% endfor %}
+                </div>
+                <p class="carousel-category-content-back">Glasses</p>
+                <!-- <p class="carousel-category-content">Glasses</p>
+                  <p class="carousel-cunt"></p>
+                  <p class="carousel-status"></p>
+                  <div class="progress-bar"></div> -->
+              </div>
+            </div>
+            <div class="carousel-cell-main">P</div>
+            <div class="carousel-cell-main">W</div>
+            <div class="carousel-cell-main">C</div>
+          </div>
+
+          <!-- <p class="carousel-status">1</p> -->
+
+          <div class="carousel-nav">
+            <div class="carousel-cell-nav">
+              <div class="carousel-nav-icon">
+                <div class="watch-icon-one"></div>
+                <div class="watch-icon-two"></div>
+                <div class="watch-icon-three"></div>
+                <div class="watch-icon-four"></div>
+                <div class="watch-icon-five"></div>
+                <div class="watch-icon-six"></div>
+                <div class="watch-icon-eight"></div>
+              </div>
+            </div>
+            <div class="carousel-cell-nav">
+              <div class="carousel-nav-icon">
+                <div class="glasses-icon-one"></div>
+                <div class="glasses-icon-two"></div>
+                <div class="glasses-icon-three"></div>
+                <div class="glasses-icon-four"></div>
+                <div class="glasses-icon-five"></div>
+                <div class="glasses-icon-six"></div>
+              </div>
+            </div>
+            <div class="carousel-cell-nav">
+              <div class="carousel-nav-icon">
+                <div class="cover-icon-one"></div>
+                <div class="cover-icon-two"></div>
+              </div>
+            </div>
+            <div class="carousel-cell-nav">
+              <div class="carousel-nav-icon">
+                <div class="wallet-icon-one"></div>
+                <div class="wallet-icon-two"></div>
+              </div>
+            </div>
+            <div class="carousel-cell-nav">
+              <div class="carousel-nav-icon">
+                <div class="cigarette-icon-one"></div>
+                <div class="cigarette-icon-two"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="production-btn production-btn-pluse cursor-link">
+        <div class="product product-pluse" style="z-index: 9999999 !important;">
+          <div class="product-one"></div>
+          <div class="product-two"></div>
+          <div class="product-three"></div>
+          <div class="product-four"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="collection-overly">
+
+
+
+
+          <div class="has-slider">
+            <div class="container-slider">
+                <div class="parallax">
+                    <div class="collection-info-bar">
+                        <p class="collection-info-bar-carousel-cell-count"></p>
+                        <div class="collection-info-bar-description">
+                          <h2>New Collection</h2>
+                          <p onclick="flktyCollection.next();">See ...</p>
+                        </div>
+                        <div class="collection-info-bar-progress"></div>
+                      </div>
+
+                    <!-- background parallax layer -->
+                    <!-- carousel: midground parallax layer -->
+                    <div class="carousel-collection cursor-dragge">
+                      <div class="carousel-cell-collection">
+                        <div class="carousel-contain-collection">
+                          <img
+                            src="{% static 'img/17.jpg' %}"
+                            alt="orange tree"
+                            class="carousel-image-collection"
+                          />
+                          <div class="carousel-overlay-collection"></div>
+                          <div class="carousel-content-collection">
+                            <div class="carousel-content-model-collection">collection Name</div>
+                            <div class="carousel-content-details-collection">
+                              Lorem Ipsum is simply dummy text
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-cell-collection">
+                        <div class="carousel-contain-collection">
+                          <img
+                            src="{% static 'img/10.jpg' %}"
+                            alt="orange tree"
+                            class="carousel-image-collection"
+                          />
+                          <div class="carousel-overlay-collection"></div>
+                          <div class="carousel-content-collection">
+                            <div class="carousel-content-model-collection">collection Name</div>
+                            <div class="carousel-content-details-collection">
+                              Lorem Ipsum is simply dummy text
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-cell-collection">
+                          <div class="carousel-contain-collection">
+                            <img
+                              src="{% static 'img/16.jpg' %}"
+                              alt="orange tree"
+                              class="carousel-image-collection"
+                            />
+                            <div class="carousel-overlay-collection"></div>
+                            <div class="carousel-content-collection">
+                              <div class="carousel-content-model-collection">collection Name</div>
+                              <div class="carousel-content-details-collection">
+                                Lorem Ipsum is simply dummy text
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- <p class="carousel-category-content-back-collection">Collection</p> -->
+                    <!-- <p class="carousel-category-content">Glasses</p>
+                      <p class="carousel-cunt"></p>
+                      <p class="carousel-status"></p>
+                      <div class="progress-bar"></div> -->
+                  </div>
+
+            </div>
+          </div>
+
+        <div class="production-btn cursor-link" style="z-index: 999999 !important;">
+          <div class="collection" style="right:0">
+            <div class="collection-one"></div>
+            <div class="collection-two"></div>
+            <div class="collection-three"></div>
+            <!-- <div class="collection-four"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-media">
+      <div class="social-media-btn cursor-link">
+            <div class="social-media-btn-one"></div>
+            <div class="social-media-btn-two"></div>
+      </div>
+          <div class="social-media-data">
+              <a href="#" class="social-media-data-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-media-data-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-media-data-icon"><i class="fab fa-telegram-plane" ></i></a>
+          </div>
+    </div>
+    <!---CURSORS--->
+    <div>
+
+          <div class="dragge-1"></div>
+          <div class="dragge-2"></div>
+
+
+      <div class="main-cursor"></div>
+      <div class="follow-cursor"></div>
+      <div class="pace-activity"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+    <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
+
+    <script src="{% static 'js/script.js' %}"></script>
+    <script>
+    //Number Picker Plugin - TobyJ
+
+(function($) {
+  $.fn.numberPicker = function() {
+    var dis = "disabled";
+    return this.each(function() {
+      var picker = $(this),
+        p = picker.find("button:last-child"),
+        m = picker.find("button:first-child"),
+        input = picker.find("input"),
+        min = parseInt(input.attr("min"), 10),
+        max = parseInt(input.attr("max"), 10),
+        inputFunc = function(picker) {
+          var i = parseInt(input.val(), 10);
+          if (i <= min || !i) {
+            input.val(min);
+            p.prop(dis, false);
+            m.prop(dis, true);
+          } else if (i >= max) {
+            input.val(max);
+            p.prop(dis, true);
+            m.prop(dis, false);
+          } else {
+            p.prop(dis, false);
+            m.prop(dis, false);
+          }
+        },
+        changeFunc = function(picker, qty) {
+          var q = parseInt(qty, 10),
+            i = parseInt(input.val(), 10);
+          if ((i < max && q > 0) || (i > min && !(q > 0))) {
+            input.val(i + q);
+            inputFunc(picker);
+          }
+        };
+      m.on("click", function() {
+        changeFunc(picker, -1);
+      });
+      p.on("click", function() {
+        changeFunc(picker, 1);
+      });
+      input.on("change", function() {
+        inputFunc(picker);
+      });
+      inputFunc(picker); //init
+    });
+  };
+})(jQuery);
+
+$(document).on("ready", function() {
+  $(".plusminus").numberPicker();
+
+  //add dynamically:
+  // $('<div class="plusminus horiz"><button></button><input type="number" name="qty" value="1" min="1" max="5"><button></button></div>').numberPicker().appendTo('body');
+});
+</script>
+  </body>
+</html>

@@ -7,7 +7,7 @@ from django.db.models.functions import TruncDay
 from django.http import JsonResponse
 from django.urls import path
 
-from .models import PriceProfile
+from .models import PriceProfile, Order
 
 @admin.register(PriceProfile)
 class PriceProfileAdmin(admin.ModelAdmin):

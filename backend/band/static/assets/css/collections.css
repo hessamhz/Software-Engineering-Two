@@ -1,0 +1,276 @@
+/* collectionIcon######################################################################################################################## */
+.collection-btn-pluse {
+    position: absolute;
+    bottom: 36px;
+    right: -15px;
+  }
+  .collection {
+    /* margin: 0px 20px; */
+    position: absolute;
+    bottom: 0px;
+    right: 70px;
+    cursor: pointer;
+    z-index: 3;
+  
+    -webkit-flex: none;
+    flex: none;
+    overflow: hidden !important;
+    margin: 0 0 0 20px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: none;
+    /* width: 40px;
+    height: 40px; */
+  
+    /* border: 1px solid #fed208;
+    border-radius: 50%; */
+  }
+  .collection-one {
+    /* display: inline-block; */
+    border: 2px solid #fff;
+    width: 15px;
+    height: 15px;
+    /* transform: rotate(-225deg) !important; */
+    position: absolute;
+    /* bottom: 19px; */
+    bottom: 13px;
+    right: 0px;
+  }
+  .collection-two {
+    /* display: inline-block; */
+    border: 2px solid #fff;
+    width: 15px;
+    /* height: 34px; */
+    height: 28px;
+    /* transform: rotate(-45deg) !important; */
+    position: absolute;
+    bottom: 0px;
+    right: 19px;
+    /* margin: 0 20px; */
+  }
+  .collection-three {
+    /* display: inline-block; */
+    border: 2px solid #fff;
+    width: 15px;
+    height: 15px;
+    /* transform: rotate(-225deg) !important; */
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  /* collectionCarousel######################################################################################################################## */
+  .collection-overly {
+    width: 100%;
+    height: 100vh;
+    background-color: #101010;
+    z-index: 0;
+    position: absolute;
+    /* bottom: -100%; */
+    z-index: 1;
+    overflow: hidden !important;
+  }
+  /* collection-carousel--------------------------------------------------------------------------------------- */
+.collection-info-bar {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    height: 100vh;
+    width: 20%;
+    background: #1f1f1f;
+    opacity: 0.99;
+    z-index: 99 !important;
+  }
+  .collection-info-bar-carousel-cell-count {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 1;
+    /* padding: 1rem 2rem; */
+    color: #fff;
+  }
+  .collection-info-bar-description {
+    position: absolute;
+    bottom: 27px;
+    left: 10px;
+    z-index: 1;
+    /* padding: 1rem 2rem; */
+    color: #fff;
+  }
+  .collection-info-bar-description-header{
+    font-size: 30px;
+  }
+  .collection-info-bar-progress {
+    height: 100%;
+    background: #161616;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .collection-carousel-cell:hover .collection-carousel-cell-image {
+    transform: scale(1.05);
+  }
+  .collection-carousel-cell-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    padding: 1rem 2rem;
+    color: #fff;
+  }
+  
+  .has-slider {
+    position: absolute;
+    /* margin-top: 10%; */
+    overflow: hidden !important;
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    /* height: 100%; */
+  }
+  .container-slider {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 999999 !important;
+  }
+  
+  /* parallax */
+  .parallax {
+    position: relative;
+    height: 100vh;
+    overflow: hidden !important;
+  }
+  
+  /* carousel */
+  .carousel-collection {
+    width: 100%;
+    height: 100vh;
+  }
+  .carousel-collection .flickity-viewport {
+    height: 100% !important;
+  }
+  
+  .carousel-cell-collection {
+    /* outline: 2px solid green; */
+    height: 100%;
+    /* width: 100%; */
+    width: 75%;
+    margin: 0px 0;
+    background: transparent;
+    /* border-radius: 5px; */
+    z-index: 1;
+  }
+  
+  .carousel-contain-collection {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  
+  .carousel-image-collection {
+    display: block;
+    /* -webkit-clip-path: inset(2% 2% 2% 2%);
+            clip-path: inset(2% 2% 2% 2%); */
+    width: 70vw;
+    height: 70vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* transition-property: all;
+    transition-duration: 0.5s; */
+  }
+  .carousel-cunt-collection {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    position: absolute;
+    right: 40px;
+    bottom: 35px;
+    color: #fff;
+  }
+  .carousel-status-collection {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    position: absolute;
+    left: 40px;
+    top: 35px;
+    color: #fff;
+  }
+  .progress-bar-collection {
+    height: 20px;
+    width: 0;
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    left: 0px;
+    top: 35px;
+    z-index: 0;
+  }
+  /* .carousel-overlay {
+    width: 70vw;
+    height: 70vh;
+  
+       position: absolute;
+       top: 50%;
+       left:50%;
+                 transform: translate(-50%, -50%);
+    background: #000;
+    opacity: 0.5;
+  } */
+  .carousel-content-collection {
+    color: #fff;
+    /* position: absolute;
+    top: 14%;
+    left: 24%;
+    padding: 10px 20px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .carousel-content-model-collection {
+    color: #fff;
+    align-items: center;
+    font-family: "Poppins";
+    font-size: 90px;
+  }
+  .carousel-content-details-collection {
+    color: rgb(255, 255, 255,0.5);
+    font-size: 12px;
+    margin:-35px 5px;
+  }
+  .carousel-content-price-collection {
+    color: #fff;
+    font-size: 16px;
+    margin:-35px 6px;
+    text-align: right;
+  }
+  .carousel-category-content-collection {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    position: absolute;
+    left: 40px;
+    top: 35px;
+    color: #fff;
+  }
+  .carousel-category-content-back-collection {
+    font-family: "Poppins", sans-serif;
+    color: #090909;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    z-index: -1;
+    font-size: 450px;
+    transform: translateX(-50%) translateY(-50%);
+    font-weight: bold;
+    opacity: 0.5;
+  }
+  

@@ -1,0 +1,189 @@
+/* homeCarousel######################################################################################################################## */
+.home-carousel-main {
+  overflow: hidden;
+  position: relative;
+}
+.home-carousel-cell {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  cursor: default !important;
+}
+.home-carousel-cell img {
+  /* display: block; */
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: 50% 50%;
+  image-rendering: optimizeQuality;
+  will-change: left, right;
+  transform: scale(1,1);
+  /* animation:carouselAnimation 10s infinite; */
+}
+/* @keyframes carouselAnimation {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.2, 1.2);}
+  100% {transform: scale(1);}
+} */
+.home-carousel-cell::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(2, 2);
+  content: "";
+  background: rgba(15, 15, 15, 0.8) !important;
+  z-index: 1 !important;
+}
+/* .home-carousel-cell-overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(15, 15, 15, 0.8);
+  transform: scale(2, 2);
+} */
+/* homeCarouselContent######################################################################################################################## */
+.home-carousel-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  will-change: width, left, right;
+  
+}
+.home-carousel-content h2 {
+  display: inline-block;
+  /* width: 50%; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+  font-family: "Poppins";
+  font-size: 11.1111111111vw;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 88%;
+  mix-blend-mode: lighten;
+  will-change: transform, opacity;
+}
+.home-carousel-content h2 a {
+  display: block;
+  color: #ccc;
+}
+.home-carousel-content p {
+  display: block;
+  color: rgb(204, 204, 204, 0.1);
+  font-size: 30px;
+  margin: 0;
+}
+.home-carousel-content h3 {
+  display: block;
+  color: #ccc;
+  font-size: 12px;
+  margin: 0 0 0 -20px;
+  text-transform: uppercase;
+}
+/* homeCarouselOption######################################################################################################################## */
+.home-carousel-option {
+  position: absolute;
+  left:50%;
+  bottom: 52px;
+  transform: translate(-50%,0);
+  width: 250px;
+}
+/* homeCarouselArrowButton ---------------------------------------*/
+.home-carousel-button-left-icon {
+  position: absolute;
+  top:-12px;
+  left: 10px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  width: 20px;
+  height: 20px;
+  transform: rotate(-225deg) !important;
+  cursor: pointer;
+}
+.home-carousel-button-right-icon {
+  position: absolute;
+  top:-12px;
+  right: 10px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  width: 20px;
+  height: 20px;
+  transform: rotate(-45deg) !important;
+  cursor: pointer;
+}
+/* homeCarouselStatus --------------------------------------------*/
+.home-carousel-status-counter-wrapper  {
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  position: absolute;
+  top:-15px;
+  left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-carousel-status-length-wrapper {
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  top:-15px;
+  right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* homeCarouselProgressBar ----------------------------------------*/
+.home-carousel-progress-bar-back {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 2px;
+  width: 50%;
+  background-color: rgba(239, 239, 239, 0.2);
+  z-index: 1;
+  display: inline-block;
+}
+.home-carousel-progress-bar {
+  height: 100%;
+  background-color: #fff;
+}
+/* homeCarouselPageDots ----------------------------------------*/
+/* .home-carousel-main .flickity-page-dots {
+  bottom: 30px;
+}
+.home-carousel-main .flickity-page-dots .dot {
+  width: 30px;
+  height: 4px;
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.5);
+  border: 0 solid white;
+  border-radius: 0;
+}
+.home-carousel-main .flickity-page-dots .dot.is-selected {
+  background: #ff0000;
+  border: 0 solid #ff0000;
+} */

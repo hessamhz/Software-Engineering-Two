@@ -70,7 +70,7 @@ olefile==0.45.1
 onboard==1.4.1
 packaging==20.3
 padme==1.1.1
-paramiko==2.0.0
+paramiko==2.10.1
 passlib==1.7.1
 pexpect==4.2.1
 Pillow==7.2.0
